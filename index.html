@@ -1,51 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Connectify</title>
-	<meta charset="UTF-8" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
-	<link rel="stylesheet" href="assets/css/style-complete.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connectify - Your University Network</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="front-img">
-	<img src="assets/images/background.jpg" alt="Background Image">
-</div>	
 
-<div class="wrapper">
-	<div class="header-wrapper">
-		<div class="nav-container">
-			<div class="nav">
-				<div class="nav-left">
-					<ul>
-						<li><i class="fa fa-twitter" aria-hidden="true"></i><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-					</ul>
-				</div>
-				<div class="nav-right">
-					<ul>
-						<li><a href="#">Language</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="inner-wrapper">
-		<div class="main-container">
-			<div class="content-left">
-				<h1 style="color: black;">Welcome to NSU Campus Companion.</h1>
-				<br/>
-				<p>A place to connect with your friends — and Get updates from the people you love, And get the updates from the world and things that interest you.</p>
-			</div>
-			<div class="content-right">
-				<div class="login-wrapper">
-					<!-- Include your login form HTML here -->
-				</div>
-				<div class="signup-wrapper">
-					<!-- Include your signup form HTML here -->
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+<aside>
+    <div class="profile">
+        <img src="anondo.jpg" alt="Profile Picture">
+        <h2>Md Khurshid Jahan</h2>
+    </div>
+    <button class="menu-button">Home</button>
+    <button class="menu-button">Profile</button>
+    <button class="menu-button">Messages</button>
+    <button class="menu-button">Notifications</button>
+    <button id="logout" class="menu-button" style="background-color: #28a745;">Log Out</button>
+</aside>
+
+<header>
+    <h1>Welcome to Connectify</h1>
+    <nav>
+        <ul>
+            
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="post-box">
+        <textarea id="postContent" placeholder="What's on your mind?"></textarea>
+        <button id="postBtn" class="post-btn">Post</button>
+    </section>
+
+    <section class="feed" id="postFeed">
+        <!-- Dummy posts -->
+        <div class="post">
+            <div class="user-info">
+                <img src="user-avatar.jpg" alt="User Avatar">
+                <h2>Jane Doe</h2>
+            </div>
+            <p>#MondayMotivation - Stay focused and keep working towards your goals!</p>
+        </div>
+        <div class="post">
+            <div class="user-info">
+                <img src="user-avatar.jpg" alt="User Avatar">
+                <h2>Bob Smith</h2>
+            </div>
+            <p>Enjoying a great day at the park! #Nature #Relaxation</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2023 Connectify</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
