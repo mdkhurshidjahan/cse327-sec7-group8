@@ -1,0 +1,57 @@
+<!-- Add Post Option -->
+<div class="post-box">
+    <textarea id="postContent" placeholder="What's on your mind?"></textarea>
+    <button id="postBtn" class="post-btn">Post</button>
+</div>
+
+<!-- Display Total Posts Count -->
+<div class="profile-extra-info">
+    <div class="profile-extra-inner">
+        <ul>
+            <li>
+                <div class="profile-ex-location">
+                    Total Posts: 100 <!-- Replace with actual total posts count -->
+                </div>
+            </li>
+            <!-- Add other profile info here -->
+        </ul>
+    </div>
+</div>
+
+<!-- Upload Photo Option -->
+<div class="img-upload-button-wrap1">
+    <div class="img-upload-button">
+        <label for="img-upload-btn">
+            <i class="fa fa-camera" aria-hidden="true"></i>
+        </label>
+        <span class="span-text">Change your profile photo</span>
+        <input id="img-upload-btn" type="checkbox" />
+        <div class="img-upload-menu">
+            <span class="img-upload-arrow"></span>
+            <form method="post" enctype="multipart/form-data">
+                <ul>
+                    <li>
+                        <label for="profileImage">Upload photo</label>
+                        <input name="profileImage" type="file" onchange="this.form.submit();" id="profileImage" />
+                    </li>
+                    <li><a href="javascript: void(0);">Remove</a></li>
+                    <li>
+                        <label for="img-upload-btn">Cancel</label>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Hashtag Option -->
+<div class="profile-bio-wrap">
+    <div class="profile-bio-inner">
+        <textarea class="status" name="bio"></textarea>
+        <div class="hash-box">
+            <ul>
+                <!-- Hashtags will be displayed here -->
+            </ul>
+        </div>
+    </div>
+</div>
